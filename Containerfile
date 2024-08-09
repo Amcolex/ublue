@@ -41,7 +41,7 @@ ARG SOURCE_TAG="latest-amd64"
 
 ### 2. SOURCE IMAGE
 ## this is a standard Containerfile FROM using the build ARGs above to select the right upstream image
-FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
+FROM ghcr.io/ublue-os/cosmic-nvidia:latest-amd64 # ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 
 
 ### 3. MODIFICATIONS
